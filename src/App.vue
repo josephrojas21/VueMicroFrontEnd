@@ -46,6 +46,7 @@ export default {
         {
           name: "React Appplication",
           alias: "app1",
+          store: "/app1/store.js",
           url: "/app1/singleSpaEntry.js",
           target: "http://localhost:9001",
           pathRewrite: { "^/app1": "" }
@@ -53,6 +54,7 @@ export default {
         {
           name: "Angular Appplication",
           alias: "app2",
+          store: "/store/counterReducer.js",
           url: "/app2/singleSpaEntry.js",
           target: "http://localhost:9002",
           pathRewrite: { "^/app2": "" }
@@ -60,6 +62,7 @@ export default {
         {
           name: "Angular 1.6 Appplication",
           alias: "app3",
+          store: "/store/counterReducer.js",
           url: "/app3/singleSpaEntry.js",
           target: "http://localhost:9003",
           pathRewrite: { "^/app3": "" }
@@ -67,6 +70,7 @@ export default {
         {
           name: "Vue Appplication",
           alias: "app4",
+          store: "/store/counterReducer.js",
           url: "/app4/singleSpaEntry.js",
           target: "http://localhost:8004",
           pathRewrite: { "^/app4": "" }
@@ -74,6 +78,7 @@ export default {
         {
           name: "Angular Appplication",
           alias: "app5",
+          store: "/store/counterReducer.js",
           url: "/app5/singleSpaEntry.js",
           target: "http://localhost:9005",
           pathRewrite: { "^/app5": "" }

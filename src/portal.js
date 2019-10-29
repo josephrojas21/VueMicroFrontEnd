@@ -23,7 +23,7 @@ export async function init(values) {
     const loadingPromises = [];
 
     values.forEach(app => {
-        loadingPromises.push(loadApp(app.alias, `/${app.alias}`, `/${app.alias}/singleSpaEntry.js`, null, globalEventDistributor));
+        loadingPromises.push(loadApp(app.alias, `/${app.alias}`, `/${app.alias}/singleSpaEntry.js`, app.store, globalEventDistributor));
     });
 
     // app4: The URL "/app4/..." is being redirected to "http://localhost:9004/..." this is done by the webpack proxy (webpack.config.js)
